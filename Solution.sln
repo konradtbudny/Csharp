@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 1 - variables and passing to functions", "Solution\Project 1 - variables and passing to functions.csproj", "{8288C69F-A728-4EC2-905C-EAD09D044919}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - classes", "Project2 - classes\Project 2 - classes.csproj", "{428875D2-C0D1-4A61-8BFD-D965B1710CC3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 3 - classes cont", "Project 3 - classes cont\Project 3 - classes cont.csproj", "{C53C5ED4-5DD1-4547-A7C7-988DEEE9B43C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 4 - Lists and functions overrides", "Project 4 - Lists and functions overrides\Project 4 - Lists and functions overrides.csproj", "{5D45F57A-B1EF-40C1-A426-B4DB4040F976}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 5 – Delegates", "Project 5 – Delegates\Project 5 – Delegates.csproj", "{195C88FC-A0BF-41DD-91B7-C990E3C1EFC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - classes", "Project 2 - classes\Project 2 - classes.csproj", "{428875D2-C0D1-4A61-8BFD-D965B1710CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 1 - variables and passing to functions", "Project 1 - variables and passing to functions\Project 1 - variables and passing to functions.csproj", "{8288C69F-A728-4EC2-905C-EAD09D044919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8288C69F-A728-4EC2-905C-EAD09D044919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8288C69F-A728-4EC2-905C-EAD09D044919}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8288C69F-A728-4EC2-905C-EAD09D044919}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8288C69F-A728-4EC2-905C-EAD09D044919}.Release|Any CPU.Build.0 = Release|Any CPU
-		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C53C5ED4-5DD1-4547-A7C7-988DEEE9B43C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C53C5ED4-5DD1-4547-A7C7-988DEEE9B43C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C53C5ED4-5DD1-4547-A7C7-988DEEE9B43C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +31,14 @@ Global
 		{195C88FC-A0BF-41DD-91B7-C990E3C1EFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{195C88FC-A0BF-41DD-91B7-C990E3C1EFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{195C88FC-A0BF-41DD-91B7-C990E3C1EFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428875D2-C0D1-4A61-8BFD-D965B1710CC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8288C69F-A728-4EC2-905C-EAD09D044919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8288C69F-A728-4EC2-905C-EAD09D044919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8288C69F-A728-4EC2-905C-EAD09D044919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8288C69F-A728-4EC2-905C-EAD09D044919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
