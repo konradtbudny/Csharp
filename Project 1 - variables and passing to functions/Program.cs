@@ -12,6 +12,7 @@ namespace Solution
         ctrl + k, c comments a line of code
         ctrl + k, u uncomments a line of code
         f5 builds and starts a program
+        alt + shift + enter makes fullscreen
         */
         public static int max(int[] t)
         {

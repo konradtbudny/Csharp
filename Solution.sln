@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - classes", "Proj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 1 - variables and passing to functions", "Project 1 - variables and passing to functions\Project 1 - variables and passing to functions.csproj", "{8288C69F-A728-4EC2-905C-EAD09D044919}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 6 - Singletons", "Project 6 - Singletons\Project 6 - Singletons.csproj", "{8347987E-FF24-4B00-A15D-C5DE2CB01708}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8288C69F-A728-4EC2-905C-EAD09D044919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8288C69F-A728-4EC2-905C-EAD09D044919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8288C69F-A728-4EC2-905C-EAD09D044919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8347987E-FF24-4B00-A15D-C5DE2CB01708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8347987E-FF24-4B00-A15D-C5DE2CB01708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8347987E-FF24-4B00-A15D-C5DE2CB01708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8347987E-FF24-4B00-A15D-C5DE2CB01708}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
