@@ -18,15 +18,15 @@
             {
                 Console.WriteLine("First multiplication");
                 return d * e;
-            },10,5);
+            }, 10, 5);
             PerformOperation((d, e) =>
             {
                 Console.WriteLine("Second multiplication");
                 return d * e;
             }, 10, 5);
             int x = 6, y = 8;
-            Console.WriteLine("x: "+x+" y: "+y+", "+ (x>y?"x is bigger than y":"x is smaller than y"));//ternary operator
-            PerformOperation((d,e) =>d*e,10,5);
+            Console.WriteLine("x: " + x + " y: " + y + ", " + (x > y ? "x is bigger than y" : "x is smaller than y"));//ternary operator
+            PerformOperation((d, e) => d * e, 10, 5);
             Console.ReadKey();
         }
 
