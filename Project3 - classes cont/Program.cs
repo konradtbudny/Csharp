@@ -10,7 +10,7 @@ namespace Project3
 
         public static void m(params int[] val)
         {
-            Console.WriteLine("m(params)") ;
+            Console.WriteLine("m(params)");
         }
 
         static void Main(string[] args)
