@@ -6,8 +6,9 @@ namespace Solution
     {
         /*
         cw + 2xTab autofills Console.WriteLine();
+        ctrl+
         ctrl + l deletes a line of code
-        ctrl + k, d autoformats a code
+        ctrl + k, d or f autoformats a code
         ctrl + k, c comments a line of code
         ctrl + k, u uncomments a line of code
         f5 builds and starts a program
@@ -81,11 +82,12 @@ a second string";
             int val2;
             Console.WriteLine("original value: {0}", val1);
             passByValue(val1);
-            Console.WriteLine("val1 after passByValue function: {0}",val1);
+            Console.WriteLine("val1 after passByValue function: {0}", val1);
             passByInitializedReference(ref val1);
             Console.WriteLine("val1 after passByInitilizedValue: {0}", val1);
             passByUninitializedReference(out val2);
             Console.WriteLine("val2 after passByUninitializedReference: {0}", val2);
+            Console.ReadKey();
 
 
         }
