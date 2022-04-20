@@ -1,8 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Solution
 {
+    public class Numbers
+    {
+        public List<int> ListOfNumbers { get; set; }
+        public Numbers() { }
+    }
     public class Person : IComparable<Person>
     {
         public string Name { get; set; }
@@ -86,6 +92,22 @@ namespace Solution
                 Operation o = Math.Max;
                 Console.WriteLine(o(10, 5));
             }
+            //SelectMany in Lists
+            Numbers numbers1 = new Numbers
+            {
+                ListOfNumbers = new List<int> { 2, 3, 7, 4 }
+            };
+            Numbers numbers2 = new Numbers
+            {
+                ListOfNumbers = new List<int> { 1, 5, 6, 8, 4 }
+            };
+            List<Numbers> numbers = new List<Numbers> { numbers1, numbers2 };
+            Console.WriteLine("First list count: " + numbers1.ListOfNumbers.Count);
+            Console.WriteLine(String.Join(", ", numbers1.ListOfNumbers));
+            Console.WriteLine("Second list count: " + numbers2.ListOfNumbers.Count);
+            Console.WriteLine(String.Join(", ", numbers2.ListOfNumbers));
+            Console.WriteLine("Joined list count: " + (numbers.SelectMany(o => o.ListOfNumbers)).ToList().Count());
+            Console.WriteLine(String.Join(", ", (numbers.SelectMany(o => o.ListOfNumbers)).ToList()));
             Console.ReadKey();
         }
         public static int Addition(int a, int b)
