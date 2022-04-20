@@ -6,7 +6,7 @@ namespace Solution
     {
         /*
         cw + 2xTab autofills Console.WriteLine();
-        ctrl+
+        sim or svm + 2x Tab creates Main(args[]) function
         ctrl + l deletes a line of code
         ctrl + k, d or f autoformats a code
         ctrl + k, c comments a line of code

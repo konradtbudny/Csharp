@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 3 - classes cont", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 4 - Lists and functions overrides", "Lists and functions overrides\Project 4 - Lists and functions overrides.csproj", "{0A18E760-D9DD-43E8-9304-722450634E3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 5 - Delegates", "Project 5 - Delegates\Project 5 - Delegates.csproj", "{B383309C-1874-4DDC-B32D-D3A01B60758E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0A18E760-D9DD-43E8-9304-722450634E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A18E760-D9DD-43E8-9304-722450634E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A18E760-D9DD-43E8-9304-722450634E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B383309C-1874-4DDC-B32D-D3A01B60758E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B383309C-1874-4DDC-B32D-D3A01B60758E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B383309C-1874-4DDC-B32D-D3A01B60758E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B383309C-1874-4DDC-B32D-D3A01B60758E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

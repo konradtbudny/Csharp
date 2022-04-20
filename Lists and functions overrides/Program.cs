@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-namespace Project4
+﻿namespace Project4
 {
     public class Person : IComparable<Person>
     {
@@ -74,16 +72,16 @@ namespace Project4
                 new Person("Isabelle",12)
             };
                 Console.WriteLine(String.Join(Environment.NewLine, listOfPeople));
-                Console.WriteLine("Contains Tom,43?"+listOfPeople.Contains(new Person("Tom",43)));
+                Console.WriteLine("Contains Tom,43?" + listOfPeople.Contains(new Person("Tom", 43)));
                 Console.WriteLine("----------------------------------------");
                 listOfPeople.Sort();//uses compareTo() to sort elements
                 Console.WriteLine("Sorted list of people:");
                 Console.WriteLine(String.Join(Environment.NewLine, listOfPeople));
                 Console.WriteLine("-------------------------------------------");
-                listOfPeople.Sort((p1,p2) =>p1.Name.CompareTo(p2.Name));//lambda expression, similar to anonymous function (difference in a number of expressions)
+                listOfPeople.Sort((p1, p2) => p1.Name.CompareTo(p2.Name));//lambda expression, similar to anonymous function (difference in a number of expressions)
                 Console.WriteLine(String.Join(Environment.NewLine, listOfPeople));
                 Operation o = Math.Max;
-                Console.WriteLine(o(10,5));
+                Console.WriteLine(o(10, 5));
             }
             Console.ReadKey();
         }
