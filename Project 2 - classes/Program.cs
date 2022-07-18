@@ -101,7 +101,6 @@ namespace Project2
             e.HourlyRate = 10;
             Console.WriteLine(e.HourlyRate);
             e.IntroduceYourself();
-
             Product product = new Product { PriceWithoutTax = 5 };
             Console.WriteLine(product);
             product.PriceWithTax = 10;

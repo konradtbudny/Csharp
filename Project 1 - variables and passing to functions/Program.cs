@@ -89,8 +89,6 @@ a second string";
             passByUninitializedReference(out val2);
             Console.WriteLine("val2 after passByUninitializedReference: {0}", val2);
             Console.ReadKey();
-
-
         }
     }
 }

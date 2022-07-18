@@ -23,12 +23,12 @@ namespace Project8RelationshipClass
             Car c2 = new Car { Make = "Audi", Model = "A8", VIN = "VW2B85G4HSIHI34BNKJBFDE3", PricePerDay = 125.67 };
             p.AddRental(r1);
             c.AddCarToRental(r1);
-            Console.WriteLine(String.Join(" ",c.CarRentals));
+            Console.WriteLine(String.Join(" ", c.CarRentals));
             r1.SetRenter(p2);
             r1.SetCar(c2);
             Console.WriteLine("Renter " + r1.Renter);
             Console.WriteLine(p2.Rentals.Count);
-            Console.WriteLine("Car "+r1.Car);
+            Console.WriteLine("Car " + r1.Car);
             Console.WriteLine(p2.Rentals.Count);
             Console.WriteLine("-----------------------------------------------------");
             Member m1 = new Member { Name = "Bozydar", LastName = "Bystry", BirthDate = new DateTime(1956, 7, 12) };
@@ -75,7 +75,6 @@ public class Renter
         return FirstName + " " + LastName + " " + Discount + " " + BirthDate;
     }
 }
-
 public class Rental
 {
     public DateTime StartDate { get; set; }
@@ -210,7 +209,7 @@ public class Group
         }
         foreach (Member member in Members)
         {
-            result+="\n"+member.ToStringSimple();
+            result += "\n" + member.ToStringSimple();
         }
         return result;
     }
@@ -259,9 +258,9 @@ public class Member
         {
             result += " 0 groups";
         }
-        foreach(Group group in Groups)
+        foreach (Group group in Groups)
         {
-            result+="\n"+group.ToStringSimple();
+            result += "\n" + group.ToStringSimple();
         }
         result += BossedGroup == null ? "\nPerson is not a boss of any group" : "\nPerson is a boss of: " + BossedGroup.ToStringSimple();
         return result;
@@ -271,5 +270,4 @@ public class Member
         string result = Name + " " + LastName + " " + BirthDate;
         return result;
     }
-
 }

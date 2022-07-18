@@ -33,7 +33,6 @@ namespace Solution
         Pricelist2()
         {
         }
-
         public static Pricelist2 Instance
         {
             get

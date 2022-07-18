@@ -67,9 +67,9 @@ namespace Project_7
                 new Person("Izabela", 14),
                 new Person("Izabela", 20)
             };
-            Console.WriteLine(String.Join(", ",listOfPeople.Where(person=>person.Age<50)));
+            Console.WriteLine(String.Join(", ", listOfPeople.Where(person => person.Age < 50)));
             Console.WriteLine(String.Join(", ", listOfPeople.Select(person => person.Name.Length)));
-            Console.WriteLine(String.Join(", ", listOfPeople.OrderBy(person=>person.Name).ThenBy(person => person.Age)));
+            Console.WriteLine(String.Join(", ", listOfPeople.OrderBy(person => person.Name).ThenBy(person => person.Age)));
             Console.ReadKey();
         }
     }

@@ -31,7 +31,5 @@ namespace Solution
             PerformOperation((d, e) => d * e, 10, 5);
             Console.ReadKey();
         }
-
     }
-
 }
