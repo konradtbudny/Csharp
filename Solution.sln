@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 3 - classes cont", "Project 3 - classes cont\Project 3 - classes cont.csproj", "{C53C5ED4-5DD1-4547-A7C7-988DEEE9B43C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project3ClassesCont", "Project 3 - classes cont\Project3ClassesCont.csproj", "{C53C5ED4-5DD1-4547-A7C7-988DEEE9B43C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 4 - Lists and functions overrides", "Project 4 - Lists and functions overrides\Project 4 - Lists and functions overrides.csproj", "{5D45F57A-B1EF-40C1-A426-B4DB4040F976}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4ListsAndFunctionsOverrides", "Project 4 - Lists and functions overrides\Project4ListsAndFunctionsOverrides.csproj", "{5D45F57A-B1EF-40C1-A426-B4DB4040F976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 5 – Delegates", "Project 5 – Delegates\Project 5 – Delegates.csproj", "{195C88FC-A0BF-41DD-91B7-C990E3C1EFC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5Delegates", "Project 5 – Delegates\Project5Delegates.csproj", "{195C88FC-A0BF-41DD-91B7-C990E3C1EFC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - classes", "Project 2 - classes\Project 2 - classes.csproj", "{428875D2-C0D1-4A61-8BFD-D965B1710CC3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project2Classes", "Project 2 - classes\Project2Classes.csproj", "{428875D2-C0D1-4A61-8BFD-D965B1710CC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 1 - variables and passing to functions", "Project 1 - variables and passing to functions\Project 1 - variables and passing to functions.csproj", "{8288C69F-A728-4EC2-905C-EAD09D044919}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1VariablesAndPassingToFunctions", "Project 1 - variables and passing to functions\Project1VariablesAndPassingToFunctions.csproj", "{8288C69F-A728-4EC2-905C-EAD09D044919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 6 - Singletons", "Project 6 - Singletons\Project 6 - Singletons.csproj", "{8347987E-FF24-4B00-A15D-C5DE2CB01708}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project6Singletons", "Project 6 - Singletons\Project6Singletons.csproj", "{8347987E-FF24-4B00-A15D-C5DE2CB01708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 7", "Project 7\Project 7.csproj", "{B4661E7A-1305-495D-B442-E22BACC1CCC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project7Exercises", "Project 7\Project7Exercises.csproj", "{B4661E7A-1305-495D-B442-E22BACC1CCC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

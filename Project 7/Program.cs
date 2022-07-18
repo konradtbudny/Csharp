@@ -16,9 +16,9 @@ namespace Project_7
         }
 
         //method writing all numbers from the file numbers1.txt without repetition and sorted
-        static void noRepetitionWriting()
+        static void noRepetitionWriting(string path)
         {
-            IEnumerable<int> list = new List<string>(File.ReadAllLines("number1.txt")).Distinct().Select(number => Convert.ToInt32(number)).OrderBy(e => e);
+            IEnumerable<int> list = new List<string>(File.ReadAllLines(path)).Distinct().Select(number => Convert.ToInt32(number)).OrderBy(e => e);
         }
         // method writing length of digit included in a file
         static void numberLength(string path)
@@ -54,7 +54,7 @@ namespace Project_7
                 }
             }
             divisibleByFive("numbers1.txt");
-            noRepetitionWriting();
+            noRepetitionWriting("numbers1.txt");
             numberLength("numbers1.txt");
             sameNumbers("numbers1.txt", "numbers2.txt");
             differentNumbers("numbers1.txt", "numbers2.txt");
