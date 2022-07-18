@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 /*
  * There are 2 relationships between classes Renter, Rental and Car
  * 1) Renter - Rental relationship, which is one-to-many relatioship, since a renter can rent multiple times and a rent is assigned to one renter only
  * 2) Rental - Car relationship,which is one-to-many relationship, since a rental include one car, but a car can be rented multiple times(the car can be found in multiple rentals that does not overlap in time)
- * There are 2 more relationship types(Not shown in this project): one-to-one and many-to-many
  * 
- *    
+ * There is a many-to-many relationship between classes Member and Group, since a member can associate to many groups, and a group may have many members
+ * 
+ * There is one-to-one relatioship(not shown up here)
  */
 namespace Project8RelationshipClass
 {
@@ -28,6 +30,19 @@ namespace Project8RelationshipClass
             Console.WriteLine(p2.Rentals.Count);
             Console.WriteLine("Car "+r1.Car);
             Console.WriteLine(p2.Rentals.Count);
+            Console.WriteLine("-----------------------------------------------------");
+            Member m1 = new Member { Name = "Bozydar", LastName = "Bystry", BirthDate = new DateTime(1956, 7, 12) };
+            Member m2 = new Member { Name = "Janusz", LastName = "Klin", BirthDate = new DateTime(1981, 4, 1) };
+            Group g1 = new Group { NameOfGroup = "C3", TypeOfOrganisation = "automobile" };
+            Group g2 = new Group { NameOfGroup = "X5", TypeOfOrganisation = "cars" };
+            g1.AddMember(m1);
+            g1.AddMember(m1);
+            g1.AddMember(m2);
+            g2.AddMember(m2);
+            g1.SetBoss(m2);
+            Console.WriteLine(m2);
+            Console.WriteLine("-----------------------");
+            Console.WriteLine(g1);
             Console.ReadKey();
         }
     }
@@ -151,4 +166,110 @@ public class Car
     {
         return Make + " " + Model + " " + PricePerDay + " " + VIN;
     }
+}
+public class Group
+{
+    public string NameOfGroup { get; set; }
+    public string TypeOfOrganisation { get; set; }
+    public List<Member> Members { get; } = new List<Member>();
+    public Member Boss { get; private set; }
+    public void AddMember(Member member)
+    {
+        if (!Members.Contains(member))
+        {
+            Members.Add(member);
+            member.AddGroup(this);
+        }
+    }
+    public void RemoveMember(Member member)
+    {
+        if (Members.Contains(member))
+        {
+            Members.Remove(member);
+            member.RemoveGroup(this);
+        }
+    }
+    public void SetBoss(Member member)
+    {
+        if (Boss == null && IsMember(member))
+        {
+            Boss = member;
+            member.SetBossGroup(this);
+        }
+    }
+    public bool IsMember(Member member)
+    {
+        return Members.Contains(member);
+    }
+    public override string ToString()
+    {
+        String result = NameOfGroup + " " + TypeOfOrganisation + "\nList of Members:";
+        if (!Members.Any())
+        {
+            result += "No members";
+        }
+        foreach (Member member in Members)
+        {
+            result+="\n"+member.ToStringSimple();
+        }
+        return result;
+    }
+    public string ToStringSimple()
+    {
+        string result = NameOfGroup + " " + TypeOfOrganisation;
+        return result;
+    }
+
+}
+public class Member
+{
+    public string Name { get; set; }
+    public String LastName { get; set; }
+    public DateTime BirthDate { get; set; }
+    public List<Group> Groups { get; } = new List<Group>();
+    public Group BossedGroup { get; private set; }
+    public void AddGroup(Group group)
+    {
+        if (!Groups.Contains(group))
+        {
+            Groups.Add(group);
+            group.AddMember(this);
+        }
+    }
+    public void RemoveGroup(Group group)
+    {
+        if (Groups.Contains(group))
+        {
+            Groups.Remove(group);
+            group.RemoveMember(this);
+        }
+    }
+    internal void SetBossGroup(Group group)
+    {
+        if (BossedGroup == null)
+        {
+            BossedGroup = group;
+            group.SetBoss(this);
+        }
+    }
+    public override string ToString()
+    {
+        string result = Name + " " + LastName + " " + BirthDate + "\nPerson is a member of:";
+        if (Groups.Any())
+        {
+            result += " 0 groups";
+        }
+        foreach(Group group in Groups)
+        {
+            result+="\n"+group.ToStringSimple();
+        }
+        result += BossedGroup == null ? "\nPerson is not a boss of any group" : "\nPerson is a boss of: " + BossedGroup.ToStringSimple();
+        return result;
+    }
+    public string ToStringSimple()
+    {
+        string result = Name + " " + LastName + " " + BirthDate;
+        return result;
+    }
+
 }
