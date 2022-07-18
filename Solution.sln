@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project6Singletons", "Proje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project7Exercises", "Project 7\Project7Exercises.csproj", "{B4661E7A-1305-495D-B442-E22BACC1CCC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project8RelationshipClass", "Project8CarRentalConsoleApp\Project8RelationshipClass.csproj", "{E363557A-F413-46FD-A12F-70B06DD0977A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{B4661E7A-1305-495D-B442-E22BACC1CCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4661E7A-1305-495D-B442-E22BACC1CCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4661E7A-1305-495D-B442-E22BACC1CCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E363557A-F413-46FD-A12F-70B06DD0977A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E363557A-F413-46FD-A12F-70B06DD0977A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E363557A-F413-46FD-A12F-70B06DD0977A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E363557A-F413-46FD-A12F-70B06DD0977A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
