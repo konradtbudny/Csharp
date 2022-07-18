@@ -12,7 +12,7 @@ using System.Linq;
  */
 namespace Project8RelationshipClass
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {

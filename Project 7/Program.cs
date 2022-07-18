@@ -6,7 +6,7 @@ using Solution;
 
 namespace Project_7
 {
-    internal class Program
+    class Program
     {
         //method reading number from a file, that are divisible by 5
         static void divisibleByFive(string path)
