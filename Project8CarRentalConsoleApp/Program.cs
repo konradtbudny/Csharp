@@ -10,7 +10,7 @@ using System.Linq;
  * 
  * There is one-to-one relatioship(not shown up here)
  */
-namespace Project8RelationshipClass
+namespace Solution
 {
     class Program
     {

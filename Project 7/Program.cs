@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using Solution;
 
-namespace Project_7
+namespace Solution
 {
     class Program
     {

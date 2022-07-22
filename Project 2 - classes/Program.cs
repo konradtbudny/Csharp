@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Project2
+namespace Solution
 {
     public class Employee
     {

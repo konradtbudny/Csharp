@@ -51,9 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Project 4 - Lists and functions overrides\Project4ListsAndFunctionsOverrides.csproj">
+    <ProjectReference Include="..\Project 4 - Lists and functions overrides\Project04ListsAndFunctionsOverrides.csproj">
       <Project>{5d45f57a-b1ef-40c1-a426-b4db4040f976}</Project>
-      <Name>Project4ListsAndFunctionsOverrides</Name>
+      <Name>Project04ListsAndFunctionsOverrides</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

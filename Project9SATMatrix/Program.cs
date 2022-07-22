@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Project9SATMatrix
+namespace Solution
 {
     class Program
     {
