@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project09SATMatrix", "Proje
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project10Threading", "Project10Threading\Project10Threading.csproj", "{DB1604E5-5A4D-4E3E-907D-7C1A3264E9CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project11ScreenRecorder", "Project11Recorder\Project11ScreenRecorder.csproj", "{6A04C406-67EC-4CE0-B4C2-8AAF8DCD37BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{DB1604E5-5A4D-4E3E-907D-7C1A3264E9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB1604E5-5A4D-4E3E-907D-7C1A3264E9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB1604E5-5A4D-4E3E-907D-7C1A3264E9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A04C406-67EC-4CE0-B4C2-8AAF8DCD37BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A04C406-67EC-4CE0-B4C2-8AAF8DCD37BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A04C406-67EC-4CE0-B4C2-8AAF8DCD37BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A04C406-67EC-4CE0-B4C2-8AAF8DCD37BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
