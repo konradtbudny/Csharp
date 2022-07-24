@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A337FD22-9EF3-48D4-8357-D2E1E9C5D5A9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Project13InsuranceManagement</RootNamespace>
+    <AssemblyName>Project13InsuranceManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer\Car.cs" />
+    <Compile Include="DataLayer\Client.cs" />
+    <Compile Include="DataLayer\ObjectPlus.cs" />
+    <Compile Include="DataLayer\PopulateDB.cs" />
+    <Compile Include="DataLayer\Rental.cs" />
+    <Compile Include="IdentityManagement\SessionManager.cs" />
+    <Compile Include="IdentityManagement\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ButtonExtension.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utility\Cryptography.cs" />
+    <Compile Include="Utility\PlaceHolderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CarView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\CarView.Designer.cs" />
+    <Compile Include="Views\ClientView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ClientView.Designer.cs" />
+    <Compile Include="Views\ControlPanelView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ControlPanelView.Designer.cs" />
+    <Compile Include="Views\IForm.cs" />
+    <Compile Include="Views\LoginView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\LoginView.Designer.cs" />
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs" />
+    <Compile Include="Views\MainView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\MainView.Designer.cs" />
+    <Compile Include="Views\NavigableUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NavigableUserControl.Designer.cs" />
+    <Compile Include="Views\RentingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\RentingView.Designer.cs" />
+    <Compile Include="Views\ToolbarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ToolbarForm.Designer.cs" />
+    <Compile Include="Views\UserView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserView.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\back button.jpg" />
+    <Content Include="Images\logout symbol.jpg" />
+    <Content Include="Images\logoutsymbol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CarView.resx" />
+    <EmbeddedResource Include="Views\ClientView.resx" />
+    <EmbeddedResource Include="Views\ControlPanelView.resx" />
+    <EmbeddedResource Include="Views\LoginView.resx" />
+    <EmbeddedResource Include="Views\MainForm.resx" />
+    <EmbeddedResource Include="Views\MainView.resx" />
+    <EmbeddedResource Include="Views\NavigableUserControl.resx" />
+    <EmbeddedResource Include="Views\RentingView.resx" />
+    <EmbeddedResource Include="Views\ToolbarForm.resx" />
+    <EmbeddedResource Include="Views\UserView.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
